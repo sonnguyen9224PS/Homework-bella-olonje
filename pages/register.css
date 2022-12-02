@@ -1,0 +1,114 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+.divForm {
+  margin: 0 auto;
+  width: 700px;
+  height: 621px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.divForm__tittle {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 29px;
+  margin-bottom: 39px;
+}
+.divForm-content {
+  display: flex;
+}
+.divForm__label > div {
+  width: 150px;
+  height: 47px;
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
+  margin-right: 24px;
+  margin-bottom: 37px;
+  display: flex;
+  align-items: center;
+}
+.divForm__input input {
+  width: 420px;
+  height: 40px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  margin-bottom: 39px;
+  display: flex;
+  align-items: center;
+}
+.divForm__input__btn button {
+  width: 227px;
+  height: 50px;
+  background: #a6a0a0;
+  box-shadow: 2px 8px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #fffcfc;
+  justify-content: center;
+  margin-bottom: 17px;
+  cursor: pointer;
+}
+.divForm__input__btn :hover {
+  opacity: 0.9;
+}
+.confirmAcc {
+  margin-bottom: 17px;
+}
+.confirmAcc a {
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  justify-content: center;
+  text-decoration: none;
+}
+.confirmAcc:hover a {
+  text-decoration: underline;
+}
+@media screen and (max-width: 678px) {
+  .divForm {
+    width: 100%;
+    height: auto;
+  }
+  .divForm__label div {
+    max-width: 7rem;
+    max-height: 2rem;
+    margin-bottom: 1.4rem;
+    font-size: 0.8rem;
+    margin-right: 0;
+  }
+  .divForm__input input {
+    max-width: 12rem;
+    max-height: 2rem;
+    margin-bottom: 1rem;
+  }
+  .divForm__tittle {
+    font-size: 1rem;
+    margin: 1rem auto;
+  }
+  .divForm__input__btn button {
+    width: 5rem;
+    height: 2rem;
+    font-size: 0.8rem;
+  }
+  .confirmAcc a {
+    font-size: 1rem;
+  }
+}
